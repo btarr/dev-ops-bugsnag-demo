@@ -22,7 +22,7 @@ export default class ToDoPage extends PureComponent {
       text: this.state.todoText,
     };
     let todos = this.state.todos;
-    todos = todos.push(newTodo);
+    todos.push(newTodo);
     this.setState({
       todos,
       todoText: '',
