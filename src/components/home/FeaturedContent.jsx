@@ -62,7 +62,7 @@ export default class FeaturedContent extends PureComponent {
     // todo: update to sicko mode
     return (
       <div>
-        <SpotfyPlayer
+        <SpotifyPlayer
           uri="spotify:track:4Na0siMtWOW9pJoWJ1Ponv"
           size={{
             width: '100%',
