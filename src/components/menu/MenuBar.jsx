@@ -13,6 +13,7 @@ import {
   CALENDAR_PAGE_ROUTE,
   STOCKS_PAGE_ROUTE,
   TODO_PAGE_ROUTE,
+  TEST_PAGE_ROUTE,
 } from '../../constants/routes';
 import PropTypes from 'prop-types';
 import {
@@ -55,7 +56,7 @@ class MenuBar extends PureComponent {
         {this.renderMenuItem('Calendar', CALENDAR_PAGE_ROUTE)}
         {this.renderMenuItem('Stocks', STOCKS_PAGE_ROUTE)}
         {this.renderMenuItem('To-Do', TODO_PAGE_ROUTE)}
-        {this.renderMenuItem('Test', '/testt')}
+        {this.renderMenuItem('Test', TEST_PAGE_ROUTE)}
       </Menu>
     );
   }
