@@ -14,6 +14,7 @@ export default class ToDoPage extends PureComponent {
     this.handleAddTodo = this.handleAddTodo.bind(this);
     this.handleDeleteTodo = this.handleDeleteTodo.bind(this);
     this.renderTodoCard = this.renderTodoCard.bind(this);
+    this.renderTodoCards = this.renderTodoCards.bind(this);
   }
 
   handleAddTodo() {
@@ -21,7 +22,7 @@ export default class ToDoPage extends PureComponent {
       text: this.state.todoText,
     };
     let todos = this.state.todos;
-    todos = todos.push(newTodo);
+    todos.push(newTodo);
     this.setState({
       todos,
       todoText: '',
@@ -29,7 +30,7 @@ export default class ToDoPage extends PureComponent {
   }
 
   handleDeleteTodo(todo) {
-    const todoText = todo[text];
+    const todoText = todo.text;
     this.setState({
       todos: this.state.todos.filter((stateTodo) => stateTodo.text !== todoText),
     });
