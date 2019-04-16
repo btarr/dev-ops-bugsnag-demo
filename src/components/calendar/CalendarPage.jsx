@@ -5,10 +5,13 @@ import FullCalendar from 'fullcalendar-reactwrapper';
 import LoadingState from '../common/LoadingState';
 
 export default class CalendarPage extends PureComponent {
+  constructor(props){
+    super(props);
+  }
   componentWillMount() {
     this.fetchEvents();
   }
-  
+
   fetchEvents() {
     this.setState({
       eventsFetching: true,
@@ -23,7 +26,7 @@ export default class CalendarPage extends PureComponent {
   }
 
   eventsFetched(events) {
-    setState({
+    this.setState({
       eventsFetching: false,
       events: events
     })

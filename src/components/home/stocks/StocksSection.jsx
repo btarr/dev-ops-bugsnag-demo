@@ -15,6 +15,7 @@ export default class StocksSection extends PureComponent {
       stocks: Map(),
     };
     this.updateStocks = this.handleUpdateStocks.bind(this);
+    // this.handleUpdateStocks = this.handleUpdateStocks.bind(this);
   }
 
 
