@@ -29,7 +29,7 @@ export default class ToDoPage extends PureComponent {
   }
 
   handleDeleteTodo(todo) {
-    const todoText = todo[text];
+    const todoText = todo.text;
     this.setState({
       todos: this.state.todos.filter((stateTodo) => stateTodo.text !== todoText),
     });
