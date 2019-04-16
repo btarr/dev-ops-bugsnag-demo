@@ -21,7 +21,7 @@ export default class StocksPage extends PureComponent {
     this.handleAddStockChartDataForTicker = this.handleAddStockChartDataForTicker.bind(this);
     this.handleAddTopStocks = this.handleAddTopStocks.bind(this);
     // TODO - uncomment this
-    //this.handleSelectTicker = this.handleSelectTicker.bind(this);
+    this.handleSelectTicker = this.handleSelectTicker.bind(this);
   }
 
   componentDidMount() {
