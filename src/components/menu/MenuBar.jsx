@@ -22,7 +22,7 @@ import {
 class MenuBar extends PureComponent {
 
   getActivePathName() {
-    this.props.location.pathname;
+    return this.props.location.pathname;
   }
 
   renderMenuItem(name, route) {
