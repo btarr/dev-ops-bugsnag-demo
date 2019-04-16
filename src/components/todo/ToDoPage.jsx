@@ -14,6 +14,7 @@ export default class ToDoPage extends PureComponent {
     this.handleAddTodo = this.handleAddTodo.bind(this);
     this.handleDeleteTodo = this.handleDeleteTodo.bind(this);
     this.renderTodoCard = this.renderTodoCard.bind(this);
+    this.renderTodoCards = this.renderTodoCards.bind(this);
   }
 
   handleAddTodo() {
