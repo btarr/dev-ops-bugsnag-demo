@@ -23,7 +23,7 @@ export default class CalendarPage extends PureComponent {
   }
 
   eventsFetched(events) {
-    setState({
+    this.setState({
       eventsFetching: false,
       events: events
     })
